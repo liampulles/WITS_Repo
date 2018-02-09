@@ -1,0 +1,17 @@
+\contentsline {section}{\numberline {1}Introduction}{3}
+\contentsline {subsection}{\numberline {1.1}Aim and Objective}{3}
+\contentsline {subsection}{\numberline {1.2}Problem Statement}{3}
+\contentsline {section}{\numberline {2}Theoretical Background}{3}
+\contentsline {subsection}{\numberline {2.1}Sudoku Principles}{3}
+\contentsline {subsection}{\numberline {2.2}The Backtracking Algorithm}{4}
+\contentsline {section}{\numberline {3}Theoretical Analysis}{4}
+\contentsline {subsection}{\numberline {3.1}Time Complexity}{5}
+\contentsline {section}{\numberline {4}Experiment}{6}
+\contentsline {subsection}{\numberline {4.1}Experimental Methodology}{6}
+\contentsline {subsection}{\numberline {4.2}Apparatus}{6}
+\contentsline {section}{\numberline {5}Results}{6}
+\contentsline {subsection}{\numberline {5.1}Presentation of Results}{6}
+\contentsline {subsection}{\numberline {5.2}Results Analysis}{9}
+\contentsline {subsection}{\numberline {5.3}Results in Relation to Theory}{10}
+\contentsline {section}{\numberline {6}Conclusion}{10}
+\contentsline {section}{\numberline {7}Group Work Allotment}{11}

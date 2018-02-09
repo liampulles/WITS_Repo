@@ -1,0 +1,85 @@
+./main TestBMP/1.bmp TestBMP/1_outs.bmp s
+Exection Time (Serial) : 6.31379
+
+./main TestBMP/1.bmp TestBMP/1_outp.bmp p
+Exection Time (Parallel) : 5.13833
+
+
+./main TestBMP/2.bmp TestBMP/2_outs.bmp s
+Exection Time (Serial) : 5.45032
+
+./main TestBMP/2.bmp TestBMP/2_outp.bmp p
+Exection Time (Parallel) : 5.11123
+
+
+./main TestBMP/3.bmp TestBMP/3_outs.bmp s
+Exection Time (Serial) : 5.84925
+
+./main TestBMP/3.bmp TestBMP/3_outp.bmp p
+Exection Time (Parallel) : 5.46885
+
+
+./main TestBMP/4.bmp TestBMP/4_outs.bmp s
+Exection Time (Serial) : 5.22041
+
+./main TestBMP/4.bmp TestBMP/4_outp.bmp p
+Exection Time (Parallel) : 5.20856
+
+
+./main TestBMP/5.bmp TestBMP/5_outs.bmp s
+Exection Time (Serial) : 5.20246
+
+./main TestBMP/5.bmp TestBMP/5_outp.bmp p
+Exection Time (Parallel) : 5.13382
+
+
+./main TestBMP/6.bmp TestBMP/6_outs.bmp s
+Exection Time (Serial) : 5.20605
+
+./main TestBMP/6.bmp TestBMP/6_outp.bmp p
+Exection Time (Parallel) : 5.11949
+
+./main TestBMP/7.bmp TestBMP/7_outs.bmp s
+Exection Time (Serial) : 5.23101
+
+./main TestBMP/7.bmp TestBMP/7_outp.bmp p
+Exection Time (Parallel) : 5.08228
+
+
+./main TestBMP/8.bmp TestBMP/8_outs.bmp s
+Exection Time (Serial) : 5.20282
+
+./main TestBMP/8.bmp TestBMP/8_outp.bmp p
+Exection Time (Parallel) : 5.1518
+
+
+./main TestBMP/9.bmp TestBMP/9_outs.bmp s
+Exection Time (Serial) : 5.21546
+
+./main TestBMP/9.bmp TestBMP/9_outp.bmp p
+Exection Time (Parallel) : 5.1153
+
+
+./main TestBMP/10.bmp TestBMP/10_outs.bmp s
+Exection Time (Serial) : 5.18062
+
+./main TestBMP/10.bmp TestBMP/10_outp.bmp p
+Exection Time (Parallel) : 5.11094
+
+
+
+
+
+
+
+
+
+
+
+
+/// Box blur
+
+
+./main TestBMP/1.bmp TestBMP/1_outs.bmp s
+Exection Time (Serial) : 2.09481
+jadon@jadon-VirtualBox:~/Desktop/PC/Clarity/

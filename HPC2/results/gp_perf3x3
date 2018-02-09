@@ -1,0 +1,34 @@
+set autoscale
+unset log
+set key right
+set datafile separator ","
+f(x) = a*x
+fit f(x) "./perf/perf_9/serial_perf_9.csv" using 1:3 via a
+g(x) = b*x
+fit g(x) "./perf/perf_9/naive_perf_9.csv" using 1:3 via b
+h(x) = c*x
+fit h(x) "./perf/perf_9/shared_perf_9.csv" using 1:3 via c
+i(x) = d*x
+fit i(x) "./perf/perf_9/constant_perf_9.csv" using 1:3 via d
+j(x) = e*x
+fit j(x) "./perf/perf_9/texture_perf_9.csv" using 1:3 via e
+set xtic auto
+set ytic auto 
+set title "Performance for Kernel size 3x3"
+set ylabel "Average Time (ms)"
+set xlabel "Pixels (n)"
+set yr [0:400]
+set terminal epslatex oldstyle
+set output "perf3x3.eps"
+#set terminal png size 1280,720 enhanced
+#set output "perf3x3.png"
+plot "./perf/perf_9/serial_perf_9.csv" using 1:3 w points t "", \
+	f(x) t "Serial" w linespoints, \
+	"./perf/perf_9/naive_perf_9.csv" using 1:3 w points t "", \
+	g(x) t "Naive", \
+	"./perf/perf_9/shared_perf_9.csv" using 1:3 w points t "", \
+	h(x) t "Shared" w linespoints, \
+	"./perf/perf_9/constant_perf_9.csv" using 1:3 w points t "", \
+	i(x) t "Constant", \
+	"./perf/perf_9/texture_perf_9.csv" using 1:3 w points t "", \
+	j(x) t "Texture", \

@@ -1,0 +1,34 @@
+set autoscale
+unset log
+set key right
+set datafile separator ","
+f(x) = a*x
+fit f(x) "./over/over_9/serial_over_9.csv" using 1:3 via a
+g(x) = b*x
+fit g(x) "./over/over_9/naive_over_9.csv" using 1:3 via b
+h(x) = c*x
+fit h(x) "./over/over_9/shared_over_9.csv" using 1:3 via c
+i(x) = d*x
+fit i(x) "./over/over_9/constant_over_9.csv" using 1:3 via d
+j(x) = e*x
+fit j(x) "./over/over_9/texture_over_9.csv" using 1:3 via e
+set xtic auto
+set ytic auto 
+set title "Overhead for Kernel size 3x3"
+set ylabel "Average Time (ms)"
+set xlabel "Pixels (n)"
+set yr [0:150]
+set terminal epslatex oldstyle
+set output "over3x3.eps"
+#set terminal png size 1280,720 enhanced
+#set output "over3x3.png"
+plot "./over/over_9/serial_over_9.csv" using 1:3 w points t "", \
+	f(x) t "Serial" w linespoints, \
+	"./over/over_9/naive_over_9.csv" using 1:3 w points t "", \
+	g(x) t "Naive", \
+	"./over/over_9/shared_over_9.csv" using 1:3 w points t "", \
+	h(x) t "Shared" w linespoints, \
+	"./over/over_9/constant_over_9.csv" using 1:3 w points t "", \
+	i(x) t "Constant", \
+	"./over/over_9/texture_over_9.csv" using 1:3 w points t "", \
+	j(x) t "Texture", \

@@ -1,0 +1,8 @@
+Label/
+Training/
+__pycache__/
+Masked/
+*.png
+godd.jpg
+good.jpg
+poor.jpg
